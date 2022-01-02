@@ -1,0 +1,19 @@
+{
+    "users":[
+        {
+            "name":"mahesh",
+            "username":"mahesh_tamrakar",
+            "gmail":"mahesh123@gmail.com",
+            "phone":"1234567890",
+            "id":1
+        },
+        {
+    
+            "name":"suraj",
+            "username":"mahesh_tamrakar",
+            "gmail":"mahesh123@gmail.com",
+            "phone":"1234567890",
+            "id":2
+        }
+    ]
+}
