@@ -6,6 +6,7 @@ import {
 import { AddUsers } from "./Components/AddUsers";
 import { AllUsers } from "./Components/AllUsers";
 import { Codeforinterview } from "./Components/Codeforinterview";
+import { EditUsers } from "./Components/EditUsers";
 import { Navbar } from "./Components/Navbar";
 import { NotFound } from "./Components/NotFound";
 
@@ -23,9 +24,13 @@ function App() {
        <Route exact path="/all">
          <AllUsers />
        </Route>
+       <Route exact path="/edit/:id">
+         <EditUsers/>
+       </Route>
        <Route>
          <NotFound/>
        </Route>
+
      </Switch>
  </Router>
   );

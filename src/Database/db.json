@@ -1,19 +1,18 @@
 {
-    "users":[
-        {
-            "name":"mahesh",
-            "username":"mahesh_tamrakar",
-            "gmail":"mahesh123@gmail.com",
-            "phone":"1234567890",
-            "id":1
-        },
-        {
-    
-            "name":"suraj",
-            "username":"mahesh_tamrakar",
-            "gmail":"mahesh123@gmail.com",
-            "phone":"1234567890",
-            "id":2
-        }
-    ]
+  "users": [
+    {
+      "name": "mahesh234",
+      "username": "maheshtamrakar",
+      "email": "maheshtamarakar369@gmail.com",
+      "phone": "785364935",
+      "id": 1
+    },
+    {
+      "name": "suresh",
+      "username": "sureshkumar",
+      "email": "sureshkumar@gmail.com",
+      "phone": "9342213443",
+      "id": 2
+    }
+  ]
 }

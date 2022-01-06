@@ -1,7 +1,8 @@
-import { Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
+import { Button, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import React, { useEffect, useState } from 'react'
-import { getUsers } from '../Service/api'
+import { Link } from 'react-router-dom';
+import { getUsers, deleteUser } from '../Service/api'
 
 const useStyle = makeStyles({
     table:{
@@ -33,6 +34,10 @@ export const AllUsers = () => {
         const response = await getUsers();
         setUsers(response.data);
     }
+    const deleteUserData = async(id) => {
+        await deleteUser(id);
+        getAllUsers();
+    }
     return (
         <Table className={classes.table}>
             <TableHead >
@@ -42,6 +47,7 @@ export const AllUsers = () => {
                     <TableCell>UserName</TableCell>
                     <TableCell>Email</TableCell>
                     <TableCell>Phone</TableCell>
+                    <TableCell></TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>
@@ -53,6 +59,10 @@ export const AllUsers = () => {
                             <TableCell>{user.username}</TableCell>
                             <TableCell>{user.gmail}</TableCell>
                             <TableCell>{user.phone}</TableCell>
+                            <TableCell>
+                                <Button variant='contained' color = 'primary' style={{marginRight:10}} component = {Link} to = {`/edit/${user.id}`}>Edit</Button>
+                                <Button variant='contained' color = 'secondary' onClick={() => deleteUserData(user.id)}>Delete</Button>
+                                </TableCell>
                         </TableRow>
                     ))
                 }
