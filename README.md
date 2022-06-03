@@ -3,6 +3,8 @@
 * It is a simple crud application.
 * which does all the basic operation like create, read, update and delete
 
+<img width="960" alt="Todo-List" src="https://raw.githubusercontent.com/maheshtamarakar/simple-crud-app/master/src/Assets/Images/Screenshot%20(318).png">
+
 
 ## Features
 
