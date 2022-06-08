@@ -25,6 +25,10 @@ const initialValues = {
 }
 export const AddUsers = () => {
     const [user, setUser] = useState(initialValues);
+    // const [name, setName] = useState("");
+    // const [username, setUsername] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [phone, setPhone] = useState("");
     const {name, username, email, phone} = user;
     const classes = useStyle();
     const history = useHistory();
@@ -33,6 +37,7 @@ export const AddUsers = () => {
         // console.log(e.target.value);
         setUser({ ...user,[e.target.name]: e.target.value });
         console.log(user);
+        // setName((prev) => prev = e.target.name);
     }
 
     const addUsersDetails = async() => {

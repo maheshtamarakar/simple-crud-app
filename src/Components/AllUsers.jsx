@@ -30,9 +30,9 @@ export const AllUsers = () => {
         getAllUsers();
     },[])
 
-    const getAllUsers = async() =>{
+    const getAllUsers = async() =>{// taking all users data from api
         const response = await getUsers();
-        setUsers(response.data);
+        setUsers(response.data);//set the data
     }
     const deleteUserData = async(id) => {
         await deleteUser(id);
@@ -57,7 +57,7 @@ export const AllUsers = () => {
                             <TableCell>{user.id}</TableCell>
                             <TableCell>{user.name}</TableCell>
                             <TableCell>{user.username}</TableCell>
-                            <TableCell>{user.gmail}</TableCell>
+                            <TableCell>{user.email}</TableCell>
                             <TableCell>{user.phone}</TableCell>
                             <TableCell>
                                 <Button variant='contained' color = 'primary' style={{marginRight:10}} component = {Link} to = {`/edit/${user.id}`}>Edit</Button>
