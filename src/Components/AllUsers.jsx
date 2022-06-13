@@ -26,6 +26,8 @@ const useStyle = makeStyles({
 export const AllUsers = () => {
     const classes = useStyle();
     const [users, setUsers] = useState([]);
+
+
     useEffect(() => {
         getAllUsers();
     },[])

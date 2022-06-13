@@ -12,6 +12,7 @@ import { NotFound } from "./Components/NotFound";
 
 function App() {
   return (
+    
    <Router>
       <Navbar />
      <Switch>
@@ -33,6 +34,7 @@ function App() {
 
      </Switch>
  </Router>
+ 
   );
 }
 
